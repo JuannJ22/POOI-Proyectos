@@ -1,6 +1,5 @@
 package co.edu.uniquindio;
 
-//Clase de Estudiante
 
 public class Estudiante {
     private String numeroIdentificacion;
