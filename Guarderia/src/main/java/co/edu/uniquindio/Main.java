@@ -4,14 +4,21 @@ package co.edu.uniquindio;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Guarderia guarderia = new Guarderia("Pequeños Gigantes");
+
+        Ninio ninio = new Ninio("Raul", 3, "M", "1234", "abejas", "Carmen", "123", "DFRR1");
+        Ninio ninio2 = new Ninio("Juliana", 6, "F", "1234", "abejas", "Carmen", "123", "DFRR1");
+        Ninio ninio3 = new Ninio("Camila", 2, "F", "1234", "abejas", "Carmen", "123", "DFRR1");
+        Ninio ninio4 = new Ninio("Juan", 8, "M", "1234", "abejas", "Carmen", "123", "DFRR1");
+
+        guarderia.almacenarNinios(ninio);
+        guarderia.almacenarNinios(ninio2);
+        guarderia.almacenarNinios(ninio3);
+        guarderia.almacenarNinios(ninio4);
+
+        System.out.println(guarderia);
+
+
     }
 }
