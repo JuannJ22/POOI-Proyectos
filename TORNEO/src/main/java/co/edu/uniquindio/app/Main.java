@@ -28,7 +28,7 @@ public class Main {
         colombia.mostrarEquipo();
         argentina.mostrarEquipo();
 
-        //Crear tabla de posiciones y linea por equipoa
+        //Crear tabla de posiciones y linea por equipo registrado en el torneo
         TablaPosiciones tablaPosiciones = new TablaPosiciones();
         EstadisticaEquipo equipo1 = new EstadisticaEquipo("Argentina");
         EstadisticaEquipo equipo2 = new EstadisticaEquipo("Brasil");
@@ -51,13 +51,12 @@ public class Main {
         equipo1.registrarEstadisticaPartido(1,1);
         equipo2.registrarEstadisticaPartido(1,1);
 
+
+        //Mostrar resultados y tabla
         System.out.println("Resultados de los partidos:");
         System.out.println(partida.getResultado());
         System.out.println(partida2.getResultado());
         System.out.println(partida3.getResultado());
-
-
-
         tablaPosiciones.ordenarTabla();
         tablaPosiciones.mostrarTabla();
     }
