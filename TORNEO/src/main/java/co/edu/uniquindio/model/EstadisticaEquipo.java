@@ -15,7 +15,6 @@ public class EstadisticaEquipo {
         this.golesFavor += golesAFavor;
         this.golesContra += golesEnContra;
         this.diferenciaGoles = this.golesFavor - this.golesContra;
-
         if (golesAFavor > golesEnContra) {
             this.puntos += 3;
         } else if (golesAFavor == golesEnContra) {
