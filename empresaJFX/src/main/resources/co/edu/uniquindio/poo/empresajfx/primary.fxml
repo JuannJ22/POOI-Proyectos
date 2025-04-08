@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
-<?import javafx.geometry.Insets?>
+<?import javafx.scene.paint.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.empresajfx.viewController.PrimaryController">
+<VBox alignment="CENTER" prefHeight="250.0" prefWidth="392.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.empresajfx.viewController.PrimaryController">
     <children>
         <Label text="Bienvenidos a JavaFX" />
         <Button fx:id="primaryButton" onAction="#onOpenCrudCliente" text="Gestión de clientes" />
@@ -17,4 +14,18 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <effect>
+      <Lighting>
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant>
+               <color>
+                  <Color red="0.37933722138404846" green="0.7368420958518982" blue="0.6534243226051331" />
+               </color>
+            </Light.Distant>
+         </light>
+      </Lighting>
+   </effect>
 </VBox>
