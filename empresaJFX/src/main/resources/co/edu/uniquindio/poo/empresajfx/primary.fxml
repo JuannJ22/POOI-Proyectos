@@ -6,10 +6,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<VBox alignment="CENTER" prefHeight="250.0" prefWidth="392.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.empresajfx.viewController.PrimaryController">
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="436.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.empresajfx.viewController.PrimaryController">
     <children>
         <Label text="Bienvenidos a JavaFX" />
         <Button fx:id="primaryButton" onAction="#onOpenCrudCliente" text="Gestión de clientes" />
+      <TitledPane animated="false" text="untitled">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
